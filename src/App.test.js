@@ -1,8 +1,9 @@
+import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders the UseEffect component within the App component', async () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const useSateComponent = await screen.findByTestId('use-state-component');
+  expect(useSateComponent).toBeInTheDocument();
 });
