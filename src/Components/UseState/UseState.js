@@ -14,6 +14,7 @@ const UseState = () => {
       <h1>Counter: {count}</h1>
       <button onClick={handleIncrement}>+</button>
       <button onClick={handleDecrement}>-</button>
+      
     </div>
   );
 };
